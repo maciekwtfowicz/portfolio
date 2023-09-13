@@ -8,9 +8,13 @@ module.exports = {
       colors: {
         bg: '#020916',
         accent: '#CEFF7E',
+        lightGray: "#1F2937"
       },
       fontFamily: {
         'dmsans': ['DM Sans', 'sans-serif']
+      },
+      maxWidth: {
+        'wtf': '82rem'
       }
     },
   },

@@ -12,13 +12,17 @@
     rel="stylesheet">
 </head>
 
-<body class="font-dmsans">
-  <main>
-    <header>
-      <img class="w-10 h-10" src="./images/star.svg" alt="">
-      <p>Maciek WTFowicz</p>
-      <p>Frontend developer</p>
-      <nav>
+<body class="font-dmsans bg-bg text-white">
+  <main class="px-4">
+    <header class="max-w-wtf mx-auto py-6">
+      <div class="flex gap-4 items-center">
+        <img class="w-10 h-10" src="./images/star.svg" alt="">
+        <div>
+          <p class="text-xl font-bold text-accent">Maciek WTFowicz</p>
+          <p class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend developer</p>
+        </div>
+      </div>
+      <nav class="hidden">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -28,14 +32,25 @@
         </ul>
       </nav>
     </header>
-    <section id="about">
-      <h1>My name is Maciek and I'm an aspiring Frontend developer and a keen Star Wars fan.</h1>
-      <p>You might be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. I'm
-        looking for a new challenges so if you have one - contact me 😊</p>
-      <a href="#contact">Get in touch</a>
-      <a href="#skills">Get to know me</a>
+    <section class="mx-auto max-w-wtf mb-20" id="about">
+      <img class="w-full mb-5" src="images/maciek.png" alt="Maciek WTF-owicz.">
+
+
+      <h1 class="text-2xl font-bold mb-4">My name is Maciek and I'm an aspiring <span class="text-accent">Frontend
+          developer</span> and a keen Star Wars fan.</h1>
+      <p class="text-gray-400 mb-8">You might be interested in checking the list of my <a href="#skills"
+          class="text-white">skills</a>. Don't forget to have a glimpse
+        at my <a href="#projects" class="text-white">projects</a>. I'm
+        looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact me</a> 😊</p>
+      <div class="flex flex-col items-start gap-4">
+        <a class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem]"
+          href="#contact"><img src="images/chat.svg"> Get in touch</a>
+        <a href="#skills"
+          class="text-accent bg-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] border-lightGray border-2"><img
+            src="images/user.svg"> Get to know me</a>
+      </div>
     </section>
-    <section id="skills">
+    <section class="mx-auto max-w-wtf" id="skills">
       <h2>MY SKILLS</h2>
       <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
         below!</p>
@@ -100,12 +115,15 @@
         </ul>
       </article>
     </section>
-    <section id="projects">
+    <section class="mx-auto max-w-wtf" id="projects">
       <h2>Recent Projects</h2>
-      <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
+      <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
+        my accomplishments so far.</p>
       <article>
-        <h3>simple-editor</h3><p><img src="images/small-star.svg" alt="" class="w-4 h-4"> 27</p>
-        <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+        <h3>simple-editor</h3>
+        <p><img src="images/small-star.svg" alt="" class="w-4 h-4"> 27</p>
+        <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+          nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
         <ul>
           <li>
             HTML
@@ -123,32 +141,36 @@
 
     </section>
 
-    <section>
+    <section class="mx-auto max-w-wtf">
       <h2>After Hours</h2>
-      <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+      <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into
+        how I spend my after-hours.</p>
       <article>
         <img src="images/music.png" alt="">
         <h3>Electronic Music</h3>
-        <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
-      </article>    
+        <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
+          electronic music</p>
+      </article>
       <article>
         <img src="images/star-wars.png" alt="">
         <h3>Star Wars Universum</h3>
-        <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
-      </article> 
+        <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating
+          tales of Star Wars.</p>
+      </article>
       <article>
         <img src="images/games.png" alt="">
         <h3>Video Games</h3>
         <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
-      </article> 
+      </article>
       <article>
         <img src="images/gym.png" alt="">
         <h3>Strength Training</h3>
-        <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
-      </article> 
+        <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my
+          limits.</p>
+      </article>
     </section>
 
-    <section id="contact">
+    <section class="mx-auto max-w-wtf" id="contact">
       <h2>Let's work together</h2>
       <p>I'm open for new opportunities. <br>If you have one for me we should talk!</p>
       <a href="mailto:maciek@cotenfrontend.pl">maciek@cotenfrontend.pl</a>
