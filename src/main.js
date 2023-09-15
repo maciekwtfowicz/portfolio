@@ -44,13 +44,13 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
           target="_blank"
           rel="noreferrer nofollow"
           class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500">
-          <img src="${demoIcon}" class="w-6 h-6" alt="">
+          <img src="${demoIcon}" class="w-6 h-6" width="24" height="24" alt="">
           View demo</a>
         <a href="${html_url}"
           target="_blank"
           rel="noreferrer nofollow"
           class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500">
-          <img src="${githubIcon}" class="w-6 h-6" alt="">
+          <img src="${githubIcon}" class="w-6 h-6" width="24" height="24" alt="">
           Source code</a>
       </div>
     </article>`;
