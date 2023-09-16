@@ -20,12 +20,12 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
 
       const element = `<article class="rounded-wtf md:rounded-wtf-xl overflow-clip bg-gradient-to-br from-white/10 to-white/5 flex flex-col h-full ">
     <div
-      class="border-b border-bg h-11 p-4 gap-1.5 shadow-innerlight rounded-t-wtf md:rounded-t-wtf-xl  flex bg-gradient-to-br from-white/10 to-white/5 ">
+      class="h-11 p-4 gap-1.5 shadow-innerlight rounded-t-wtf md:rounded-t-wtf-xl  flex bg-gradient-to-br from-white/10 to-white/5 ring-1 ring-inset ring-bg">
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
     </div>
-    <div class="p-5 md:p-6 lg:p-10 flex flex-col justify-between grow ">
+    <div class="p-5 md:p-6 lg:p-10 flex flex-col justify-between grow ring-1 ring-inset ring-bg">
       <div>
       <header class="flex gap-4 items-center mb-4">
         <h3 class="text-2xl leading-none font-bold">${name}</h3>
@@ -52,6 +52,7 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
           class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500">
           <img src="${githubIcon}" class="w-6 h-6" width="24" height="24" alt="">
           Source code</a>
+      </div>
       </div>
     </article>`;
       if (homepage) projectsContainer.insertAdjacentHTML('afterbegin', element)
