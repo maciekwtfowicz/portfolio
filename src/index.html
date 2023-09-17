@@ -20,38 +20,47 @@
 </head>
 
 <body class="font-dmsans bg-bg text-white">
-  <main class="px-4">
-    <header class="flex justify-between gap-4 max-w-wtf mx-auto py-6">
-      <div class="flex gap-4 items-center">
-        <img class="w-10 h-10 animate-slowSpin" src="./images/star.svg" alt="">
-        <div>
-          <p class="text-xl font-bold text-accent">Maciek WTFowicz</p>
-          <p aria-label="Frontend developer" class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend developer</p>
+  <main>
+    <header class=" py-6 sticky top-0 bg-bg/50 backdrop-blur-lg">
+      <div class="flex justify-between gap-4 max-w-wtf mx-auto px-4">
+        <div class="flex gap-4 items-center">
+          <img class="w-10 h-10 animate-slowSpin" src="./images/star.svg" alt="">
+          <div>
+            <p class="text-xl font-bold text-accent">Maciek WTFowicz</p>
+            <p aria-label="Frontend developer" class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend
+              developer</p>
+          </div>
         </div>
+        <nav class="hidden md:block">
+          <ul class="flex items-center gap-10 font-bold">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a class="flex gap-2 items-center" download href="#"><img src="images/download.svg" width="24"
+                  height="24" alt="">Resume</a></li>
+            <li><a
+                class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8 hover:bg-accent-400 transition-colors duration-500"
+                href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="hidden md:block">
-        <ul class="flex items-center gap-10 font-bold">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a class="flex gap-2 items-center" download href="#"><img src="images/download.svg" width="24" height="24" alt="">Resume</a></li>
-          <li><a class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8 hover:bg-accent-400 transition-colors duration-500" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+    <div class="px-4">
     <section class="mx-auto max-w-wtf mb-20 md:mb-32 md:pt-32 md:flex md:justify-between items-center md:gap-12"
       id="about">
 
       <picture class="md:order-2">
-				<source srcset="images/maciek.png?as=webp&width=832" type="image/webp"/>
-				<source srcset="images/maciek.png?as=avif&width=832" type="image/avif"/>
-				<img width="416" height="459" class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5" src="images/maciek.png" alt="Zdjęcie Maćka WTF-owicza."/>
-			</picture>
+        <source srcset="images/maciek.png?as=webp&width=832" type="image/webp" />
+        <source srcset="images/maciek.png?as=avif&width=832" type="image/avif" />
+        <img width="416" height="459" class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5" src="images/maciek.png"
+          alt="Zdjęcie Maćka WTF-owicza." />
+      </picture>
 
 
 
       <div class="max-w-3xl">
-        <h1 class="text-2xl md:text-3xl lg:text-5xl md:leading-snug lg:leading-snug  font-bold mb-4">My name is Maciek and I'm an
+        <h1 class="text-2xl md:text-3xl lg:text-5xl md:leading-snug lg:leading-snug  font-bold mb-4">My name is Maciek
+          and I'm an
           aspiring <span class="text-accent">Frontend
             developer</span> and a&nbsp;keen Star Wars fan.</h1>
         <p class="text-gray-400 mb-8 md:mb-16 md:text-2xl font-medium">You might be interested in checking the list of
@@ -60,7 +69,7 @@
           looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact me</a> 😊</p>
         <div class="flex flex-col md:flex-row items-start gap-4 flex-wrap">
           <a class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtf-xl ring-accent ring-2 hover:ring-accent-400   hover:bg-accent-400 transition-colors duration-500"
-            href="#contact"><img src="images/chat.svg"  alt="" width="24" height="24"> Get in touch</a>
+            href="#contact"><img src="images/chat.svg" alt="" width="24" height="24"> Get in touch</a>
           <a href="#skills"
             class="text-accent hover:text-accent-400 transition-all duration-500 bg-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtf-xl ring-lightGray ring-2 hover:ring-accent  "><img
               src="images/user.svg" alt="" width="24" height="24"> Get to know me</a>
@@ -77,7 +86,8 @@
         <article
           class="p-5 md:p-6 lg:p-10 rounded-wtf bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring-1 ring-inset ring-bg">
           <img src="images/triangle.svg" alt="" class="w-44 h-44 mb-10 md:mb-20">
-          <h3 class="pt-3 md:pt-3.5 border-accent border-t-2 text-2xl font-bold tracking-tight mb-3">Working knowledge</h3>
+          <h3 class="pt-3 md:pt-3.5 border-accent border-t-2 text-2xl font-bold tracking-tight mb-3">Working knowledge
+          </h3>
           <ul class="text-sm font-medium tracking-tight space-y-2 ">
             <li>— Semantic HTML5</li>
             <li>— Flexbox</li>
@@ -99,7 +109,8 @@
         <article
           class="p-5 md:p-6 lg:p-10 rounded-wtf bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring-1 ring-inset ring-bg">
           <img src="images/circles.svg" alt="" class="w-44 h-44 mb-10 md:mb-20">
-          <h3 class="pt-3 md:pt-3.5 border-accent border-t-2 text-2xl font-bold tracking-tight mb-3">Know something about</h3>
+          <h3 class="pt-3 md:pt-3.5 border-accent border-t-2 text-2xl font-bold tracking-tight mb-3">Know something
+            about</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2 ">
             <li> — JavaScript ES6 + features </li>
             <li>— CSS animations</li>
@@ -141,7 +152,8 @@
     </section>
     <section class="mx-auto max-w-wtf mb-32 md:mb-64" id="projects">
       <h2 class="text-gray-400 text-xl tracking-wider font-bold mb-4 uppercase">Recent Projects</h2>
-      <p class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">Since diving into frontend development in 2023, I've brought
+      <p class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">Since diving into frontend
+        development in 2023, I've brought
         a range of projects to life. Here's a snapshot of
         my accomplishments so far.</p>
       <div class="grid gap-4 md:grid-cols-2 projects--js"></div>
@@ -156,11 +168,13 @@
       <div class="grid gap-16 md:gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
         <article>
           <picture>
-            <source  media="(max-width:1023px)"  srcset="images/music.png?as=webp&width=750&height=750" type="image/webp"/>
-            <source media="(max-width:1023px)"  srcset="images/music.png?as=avif&width=750&height=750" type="image/avif"/>
-            <source media="(min-width:1024px)" srcset="images/music.png?as=webp&width=" type="image/webp"/>
-            <source  media="(min-width:1024px)" srcset="images/music.png?as=avif&width=" type="image/avif"/>
-            <img class="w-full mb-6 rounded-wtf-xl " src="images/music.png" alt=""/>
+            <source media="(max-width:1023px)" srcset="images/music.png?as=webp&width=750&height=750"
+              type="image/webp" />
+            <source media="(max-width:1023px)" srcset="images/music.png?as=avif&width=750&height=750"
+              type="image/avif" />
+            <source media="(min-width:1024px)" srcset="images/music.png?as=webp&width=" type="image/webp" />
+            <source media="(min-width:1024px)" srcset="images/music.png?as=avif&width=" type="image/avif" />
+            <img class="w-full mb-6 rounded-wtf-xl " src="images/music.png" alt="" />
           </picture>
           <h3 class="text-2xl font-bold tracking-tight mb-1">Electronic Music</h3>
           <p class="text-gray-400">Outside of my regular working hours, I immerse myself in the pulsating rhythms and
@@ -169,11 +183,13 @@
         </article>
         <article>
           <picture class="md:order-2">
-            <source  media="(max-width:1023px)"  srcset="images/star-wars.png?as=webp&width=750&height=750" type="image/webp"/>
-            <source media="(max-width:1023px)"  srcset="images/star-wars.png?as=avif&width=750&height=750" type="image/avif"/>
-            <source media="(min-width:1024px)" srcset="images/star-wars.png?as=webp&width=" type="image/webp"/>
-            <source  media="(min-width:1024px)" srcset="images/star-wars.png?as=avif&width=" type="image/avif"/>
-            <img class="w-full mb-6 rounded-wtf-xl " src="images/star-wars.png" alt=""/>
+            <source media="(max-width:1023px)" srcset="images/star-wars.png?as=webp&width=750&height=750"
+              type="image/webp" />
+            <source media="(max-width:1023px)" srcset="images/star-wars.png?as=avif&width=750&height=750"
+              type="image/avif" />
+            <source media="(min-width:1024px)" srcset="images/star-wars.png?as=webp&width=" type="image/webp" />
+            <source media="(min-width:1024px)" srcset="images/star-wars.png?as=avif&width=" type="image/avif" />
+            <img class="w-full mb-6 rounded-wtf-xl " src="images/star-wars.png" alt="" />
           </picture>
           <h3 class="text-2xl font-bold tracking-tight mb-1">Star Wars Universum</h3>
           <p class="text-gray-400">In a galaxy not so far away, my leisure time is often spent exploring the intricate
@@ -182,11 +198,13 @@
         </article>
         <article>
           <picture>
-            <source  media="(max-width:1023px)"  srcset="images/games.png?as=webp&width=750&height=750" type="image/webp"/>
-            <source media="(max-width:1023px)"  srcset="images/games.png?as=avif&width=750&height=750" type="image/avif"/>
-            <source media="(min-width:1024px)" srcset="images/games.png?as=webp&width=" type="image/webp"/>
-            <source  media="(min-width:1024px)" srcset="images/games.png?as=avif&width=" type="image/avif"/>
-            <img class="w-full mb-6 rounded-wtf-xl " src="images/games.png" alt=""/>
+            <source media="(max-width:1023px)" srcset="images/games.png?as=webp&width=750&height=750"
+              type="image/webp" />
+            <source media="(max-width:1023px)" srcset="images/games.png?as=avif&width=750&height=750"
+              type="image/avif" />
+            <source media="(min-width:1024px)" srcset="images/games.png?as=webp&width=" type="image/webp" />
+            <source media="(min-width:1024px)" srcset="images/games.png?as=avif&width=" type="image/avif" />
+            <img class="w-full mb-6 rounded-wtf-xl " src="images/games.png" alt="" />
           </picture>
           <h3 class="text-2xl font-bold tracking-tight mb-1">Video Games</h3>
           <p class="text-gray-400">Lost in virtual realms, I find joy and challenge in the dynamic world of video games.
@@ -194,11 +212,11 @@
         </article>
         <article>
           <picture>
-            <source  media="(max-width:1023px)"  srcset="images/gym.png?as=webp&width=750&height=750" type="image/webp"/>
-            <source media="(max-width:1023px)"  srcset="images/gym.png?as=avif&width=750&height=750" type="image/avif"/>
-            <source media="(min-width:1024px)" srcset="images/gym.png?as=webp&width=" type="image/webp"/>
-            <source  media="(min-width:1024px)" srcset="images/gym.png?as=avif&width=" type="image/avif"/>
-            <img class="w-full mb-6 rounded-wtf-xl " src="images/gym.png" alt=""/>
+            <source media="(max-width:1023px)" srcset="images/gym.png?as=webp&width=750&height=750" type="image/webp" />
+            <source media="(max-width:1023px)" srcset="images/gym.png?as=avif&width=750&height=750" type="image/avif" />
+            <source media="(min-width:1024px)" srcset="images/gym.png?as=webp&width=" type="image/webp" />
+            <source media="(min-width:1024px)" srcset="images/gym.png?as=avif&width=" type="image/avif" />
+            <img class="w-full mb-6 rounded-wtf-xl " src="images/gym.png" alt="" />
           </picture>
           <h3 class="text-2xl font-bold tracking-tight mb-1">Strength Training</h3>
           <p class="text-gray-400">Empowering both body and mind, I'm dedicated to the discipline of strength training,
@@ -210,23 +228,27 @@
 
     <section class="mx-auto max-w-wtf flex flex-col items-center mb-16 md:mb-32" id="contact">
       <h2 class="mb-4 text-center text-3xl md:text-4xl font-bold tracking-tight">Let's work together</h2>
-      <p class="text-center text-gray-400 mb-10 text-lg md:text-2xl">I'm open for new opportunities. <br>If you have one for me we should
+      <p class="text-center text-gray-400 mb-10 text-lg md:text-2xl">I'm open for new opportunities. <br>If you have one
+        for me we should
         talk!</p>
       <a class="bg-accent transition-colors hover:bg-accent-400 duration-500 mb-10 md:mb-20 text-bg justify-center flex gap-3 font-bold text-xl leading-9 py-3.5 px-3.5 md:px-8 items-center rounded-wtf-xl flex-wrap"
-        href="mailto:maciek@cotenfrontend.pl"><img alt="" width="24" height="24" src="images/mail.svg">maciek@cotenfrontend.pl</a>
+        href="mailto:maciek@cotenfrontend.pl"><img alt="" width="24" height="24"
+          src="images/mail.svg">maciek@cotenfrontend.pl</a>
       <p class="text-2xl text-gray-400 font-medium mb-6">or find me on</p>
       <ul class="flex gap-4 justify-center flex-wrap">
         <li>
           <a class="w-14 h-14 rounded-full flex items-center justify-center  bg-gradient-to-br from-white/10 to-white/5 shadow-innerlightmini"
-            href="#"><img width="24" height="24" alt="Maciek WTFowicz Github" class="w-6 h-6" src="images/github.svg"></a>
+            href="#"><img width="24" height="24" alt="Maciek WTFowicz Github" class="w-6 h-6"
+              src="images/github.svg"></a>
         </li>
         <li>
           <a class="w-14 h-14 rounded-full flex items-center justify-center  bg-gradient-to-br from-white/10 to-white/5 shadow-innerlightmini"
-            href="#"><img width="24" height="24" alt="Maciek WTFowicz Instagram" class="w-6 h-6" src="images/instagram.svg"></a>
+            href="#"><img width="24" height="24" alt="Maciek WTFowicz Instagram" class="w-6 h-6"
+              src="images/instagram.svg"></a>
         </li>
       </ul>
     </section>
-
+  </div>
   </main>
   <script type="module" src="./main.js"></script>
 </body>
