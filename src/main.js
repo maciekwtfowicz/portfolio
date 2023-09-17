@@ -6,6 +6,8 @@ const username = 'maciekwtfowicz'
 const direction = 'desc'
 const projectsContainer = document.querySelector('.projects--js');
 
+console.log('Hey! Wanna talk - send me a message: maciek@cotenfrontend.pl 😎')
+
 fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
   .then(response => response.json())
   .then(response => {
@@ -20,7 +22,7 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
 
       const element = `<article class="rounded-wtf md:rounded-wtf-xl overflow-clip bg-gradient-to-br from-white/10 to-white/5 flex flex-col h-full ">
     <div
-      class="h-11 p-4 gap-1.5 shadow-innerlight rounded-t-wtf md:rounded-t-wtf-xl  flex bg-gradient-to-br from-white/10 to-white/5 ring-1 ring-inset ring-bg">
+      class="h-11 p-4 gap-1.5 shadow-inner-light rounded-t-wtf md:rounded-t-wtf-xl  flex bg-gradient-to-br from-white/10 to-white/5 ring-1 ring-inset ring-bg">
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
       <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
@@ -43,13 +45,13 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
         <a href="${homepage}"
           target="_blank"
           rel="noreferrer nofollow"
-          class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500">
+          class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-gray-800 border-2 hover:border-accent transition-colors duration-500">
           <img src="${demoIcon}" class="w-6 h-6" width="24" height="24" alt="">
           View demo</a>
         <a href="${html_url}"
           target="_blank"
           rel="noreferrer nofollow"
-          class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-lightGray border-2 hover:border-accent transition-colors duration-500">
+          class="text-accent bg-bg flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl md:text-xl border-gray-800 border-2 hover:border-accent transition-colors duration-500">
           <img src="${githubIcon}" class="w-6 h-6" width="24" height="24" alt="">
           Source code</a>
       </div>
